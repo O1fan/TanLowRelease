@@ -14,19 +14,22 @@
         }
         .container {
             width: 90%;
-            max-width: 800px;
+            max-width: 1000px;
             margin: 30px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .disclaimer, .release-list {
+            width: 48%;
             background: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
         }
         h1, h2 {
             color: #333;
-        }
-        .release-list {
-            list-style: none;
-            padding: 0;
         }
         .release-item {
             background: #fff;
@@ -49,49 +52,17 @@
             color: #666;
             font-size: 0.9em;
         }
-        .disclaimer {
-            text-align: left;
-            background: #fff;
-            padding: 20px;
+        .contact {
             margin-top: 20px;
+            padding: 20px;
+            background: white;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        .disclaimer p, .disclaimer li {
-            color: #444;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>Release</h2>
-        <ul class="release-list">
-		 <li class="release-item">
-				<a href="VersionFile/V1.0.1.2.zip" download>V1.0.1.2</a>
-				<p>修正上限下輸入限制，優化資訊</p>
-            </li>
-            <li class="release-item">
-                <a href="VersionFile/V1.0.1.1.zip" download>V1.0.1.1</a>
-                <p>優化流程，增加多商品，多口數下單</p>
-            </li>
-            <li class="release-item">
-                <a href="VersionFile/V1.0.0.7.zip" download>V1.0.0.7</a>
-                <p>增加批次送單、修正超過十筆委託錯誤問題、調整Log路徑</p>
-            </li>
-            <li class="release-item">
-                <a href="VersionFile/V1.0.0.6.zip" download>V1.0.0.6</a>
-                <p>修正計時器、刪單功能</p>
-            </li>
-            <li class="release-item">
-                <a href="VersionFile/V1.0.0.5.zip" download>V1.0.0.5</a>
-                <p>優化計時器功能，增加買賣價上下限</p>
-            </li>
-            <li class="release-item">
-                <a href="VersionFile/V1.0.0.4.zip" download>V1.0.0.4</a>
-                <p>初始版本</p>
-            </li>
-        </ul>
-        
         <div class="disclaimer">
             <h1>免責聲明</h1>
             <p>本交易程式（以下稱「本程式」）僅提供作為交易輔助工具，所有使用者應自行評估程式之適用性及交易風險。</p>
@@ -104,6 +75,36 @@
             </ul>
             <p><strong>重要提醒：</strong>在使用本程式之前，請詳細閱讀並完全理解本免責聲明。如您使用本程式，即表示您已充分了解並同意承擔所有風險及可能的損失。</p>
         </div>
+        <div class="release-list">
+            <h2>版本檔案</h2>
+            <ul>
+			    <li class="release-item">
+					<a href="VersionFile/V1.0.1.2.zip" download>V1.0.1.2</a>
+					<p>修正上限下輸入限制，優化資訊</p>
+                </li>
+                <li class="release-item">
+                    <a href="VersionFile/V1.0.1.1.zip" download>V1.0.1.1</a>
+                    <p>優化流程，增加多商品，多口數下單</p>
+                </li>
+                <li class="release-item">
+                    <a href="VersionFile/V1.0.0.7.zip" download>V1.0.0.7</a>
+                    <p>增加批次送單、修正超過十筆委託錯誤問題、調整Log路徑</p>
+                </li>
+                <li class="release-item">
+                    <a href="VersionFile/V1.0.0.6.zip" download>V1.0.0.6</a>
+                    <p>修正計時器、刪單功能</p>
+                </li>
+                <li class="release-item">
+                    <a href="VersionFile/V1.0.0.5.zip" download>V1.0.0.5</a>
+                    <p>優化計時器功能，增加買賣價上下限</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="contact">
+        <h2>聯絡資訊</h2>
+        <p>Email: aa955073@gmail.com</p>
+		<p>對參與此程式開發有興趣，或有任何問題，歡迎以此E-Mail與我聯繫</p>
     </div>
 </body>
 </html>
