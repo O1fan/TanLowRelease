@@ -1,75 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>元大API串接-下載檔案</title>
     <style>
-  body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
         }
-        h1 {
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
             color: #333;
         }
-        ul {
-            list-style-type: none;
+        .release-list {
+            list-style: none;
             padding: 0;
         }
-        li {
-            margin: 20px 0;
+        .release-item {
+            background: #fff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
         }
-        a {
+        .release-item:hover {
+            transform: scale(1.02);
+        }
+        .release-item a {
             text-decoration: none;
-            color: #0066cc;
-            font-size: 1.2em; /* 加大字體 */
-            font-weight: bold; /* 加粗字體 */
+            color: #007BFF;
+            font-weight: bold;
+            font-size: 1.2em;
         }
-        a:hover {
-            text-decoration: underline;
-        }
-        p {
-            margin: 5px 0 0 0;
+        .release-item p {
+            color: #666;
             font-size: 0.9em;
-            color: #555;
+        }
+        .disclaimer {
+            text-align: left;
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .disclaimer p, .disclaimer li {
+            color: #444;
         }
     </style>
 </head>
 <body>
-	</ul>
-	<h2>Release</h2>
-    <ul>
-		<li>
-		<a href="VersionFile/V1.0.1.1.zip" download>V1.0.1.1</a>
-		<p>優化流程，增加多商品，多口數下單</p>
-		</li>
-		<li>
-		<a href="VersionFile/V1.0.0.7.zip" download>V1.0.0.7</a>
-		<p>增加批次送單、修正超過十筆委託錯誤問題、調整Log路徑</p>
-		</li>
-	    <li>
-		<a href="VersionFile/V1.0.0.6.zip" download>V1.0.0.6</a>
-		<p>修正計時器、刪單功能</p>
-		</li>
-        <li>
-		<a href="VersionFile/V1.0.0.5.zip" download>V1.0.0.5</a>
-		<p>優化計時器功能，增加買賣價上下限</p>
-		</li>
-        <li>
-		<a href="VersionFile/V1.0.0.4.zip" download>V1.0.0.4</a>
-		<p>初始版本</p>
-		</li>        
-    </ul>
-	
- <h1 style="color: #444;">免責聲明</h1>
-    <p>本交易程式（以下稱「本程式」）僅提供作為交易輔助工具，所有使用者應自行評估程式之適用性及交易風險。</p>
-    <ul style="margin-left: 20px; list-style-type: disc;">
-        <li>本程式的運行可能受限於網路、伺服器或其他技術因素，開發者不保證本程式可隨時穩定運作或完全免於錯誤、延遲或中斷。</li>
-        <li>使用本程式進行的所有交易均由使用者自行決定及執行，使用者需承擔所有因交易決策所導致的損益，開發者或提供者概不負責。</li>
-        <li>本程式可能因市場波動、數據延遲、技術故障或其他不可控因素導致錯誤或損失，開發者不對此負任何責任。</li>
-        <li>本程式所提供的資訊或建議僅供參考，開發者不對其準確性、完整性或及時性作出保證，亦不構成任何投資建議或承諾。</li>
-        <li>使用者應對其帳戶及交易的安全性負責，任何因帳戶未經授權使用或安全疏忽而產生的損失，開發者概不負責。</li>
-    </ul>
-    <p><strong>重要提醒：</strong>在使用本程式之前，請詳細閱讀並完全理解本免責聲明。如您使用本程式，即表示您已充分了解並同意承擔所有風險及可能的損失。</p>
+    <div class="container">
+        <h2>Release</h2>
+        <ul class="release-list">
+		 <li class="release-item">
+				<a href="VersionFile/V1.0.1.2.zip" download>V1.0.1.2</a>
+				<p>修正上限下輸入限制，優化資訊</p>
+            </li>
+            <li class="release-item">
+                <a href="VersionFile/V1.0.1.1.zip" download>V1.0.1.1</a>
+                <p>優化流程，增加多商品，多口數下單</p>
+            </li>
+            <li class="release-item">
+                <a href="VersionFile/V1.0.0.7.zip" download>V1.0.0.7</a>
+                <p>增加批次送單、修正超過十筆委託錯誤問題、調整Log路徑</p>
+            </li>
+            <li class="release-item">
+                <a href="VersionFile/V1.0.0.6.zip" download>V1.0.0.6</a>
+                <p>修正計時器、刪單功能</p>
+            </li>
+            <li class="release-item">
+                <a href="VersionFile/V1.0.0.5.zip" download>V1.0.0.5</a>
+                <p>優化計時器功能，增加買賣價上下限</p>
+            </li>
+            <li class="release-item">
+                <a href="VersionFile/V1.0.0.4.zip" download>V1.0.0.4</a>
+                <p>初始版本</p>
+            </li>
+        </ul>
+        
+        <div class="disclaimer">
+            <h1>免責聲明</h1>
+            <p>本交易程式（以下稱「本程式」）僅提供作為交易輔助工具，所有使用者應自行評估程式之適用性及交易風險。</p>
+            <ul>
+                <li>本程式的運行可能受限於網路、伺服器或其他技術因素，開發者不保證本程式可隨時穩定運作或完全免於錯誤、延遲或中斷。</li>
+                <li>使用本程式進行的所有交易均由使用者自行決定及執行，使用者需承擔所有因交易決策所導致的損益，開發者或提供者概不負責。</li>
+                <li>本程式可能因市場波動、數據延遲、技術故障或其他不可控因素導致錯誤或損失，開發者不對此負任何責任。</li>
+                <li>本程式所提供的資訊或建議僅供參考，開發者不對其準確性、完整性或及時性作出保證，亦不構成任何投資建議或承諾。</li>
+                <li>使用者應對其帳戶及交易的安全性負責，任何因帳戶未經授權使用或安全疏忽而產生的損失，開發者概不負責。</li>
+            </ul>
+            <p><strong>重要提醒：</strong>在使用本程式之前，請詳細閱讀並完全理解本免責聲明。如您使用本程式，即表示您已充分了解並同意承擔所有風險及可能的損失。</p>
+        </div>
+    </div>
 </body>
 </html>
