@@ -1,0 +1,7 @@
+YuantaOneAPI_TestAP.exe
+YuantaOneAPI_TestAP.exe.config
+YuantaOneAPI.dll
+YuantaCAPIDLL64.dll
+YuantaCAPIDLL.dll
+APICOMCHECK64.dll
+APICOMCHECK.dll
